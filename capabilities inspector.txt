@@ -1,0 +1,3 @@
+  "appium:app": "C:\\qaninja\\mercanet-mobile\\app\\mercanet.apk",
+	  "appium:appActivity": "com.mercanet.android.application.activities.BasesDisponiveisActivity",
+  "appium:appPackage": "com.mercanet.android"

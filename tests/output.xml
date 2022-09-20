@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220804 23:57:05.563" rpa="false" schemaversion="3">
+<suite id="s1" name="Conexaoserv" source="C:\qaninja\mercanet-mobile\app\tests\conexaoserv.robot">
+<test id="s1-t1" name="Deve conectar ao servidor" line="8">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://127.0.0.1:4723/wd/hub</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=Emulator</arg>
+<arg>app=C:\\qaninja\\mercanet-mobile\\app\\mercanet.apk</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220804 23:57:06.261" endtime="20220804 23:57:31.408"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Allow Mercanet to take pictures and record video?</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220804 23:57:31.410" endtime="20220804 23:57:32.783"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.packageinstaller:id/permission_allow_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220804 23:57:32.802" level="INFO">Clicking element 'id=com.android.packageinstaller:id/permission_allow_button'.</msg>
+<status status="PASS" starttime="20220804 23:57:32.798" endtime="20220804 23:57:33.023"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Allow Mercanet to access photos, media, and files on your device?</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220804 23:57:33.042" endtime="20220804 23:57:34.157"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.packageinstaller:id/permission_allow_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220804 23:57:34.164" level="INFO">Clicking element 'id=com.android.packageinstaller:id/permission_allow_button'.</msg>
+<status status="PASS" starttime="20220804 23:57:34.159" endtime="20220804 23:57:34.280"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Allow Mercanet to access this device's location?</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220804 23:57:34.287" endtime="20220804 23:57:35.583"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.packageinstaller:id/permission_allow_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220804 23:57:35.589" level="INFO">Clicking element 'id=com.android.packageinstaller:id/permission_allow_button'.</msg>
+<status status="PASS" starttime="20220804 23:57:35.585" endtime="20220804 23:57:35.703"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Allow Mercanet to make and manage phone calls?</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220804 23:57:35.704" endtime="20220804 23:57:37.707"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.packageinstaller:id/permission_allow_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220804 23:57:37.713" level="INFO">Clicking element 'id=com.android.packageinstaller:id/permission_allow_button'.</msg>
+<status status="PASS" starttime="20220804 23:57:37.708" endtime="20220804 23:57:37.827"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Allow Mercanet to access your contacts?</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220804 23:57:37.829" endtime="20220804 23:57:38.939"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.android.packageinstaller:id/permission_allow_button</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220804 23:57:38.945" level="INFO">Clicking element 'id=com.android.packageinstaller:id/permission_allow_button'.</msg>
+<status status="PASS" starttime="20220804 23:57:38.940" endtime="20220804 23:57:39.048"/>
+</kw>
+<kw name="Wait Until Page Contains" library="AppiumLibrary">
+<arg>Informe o endereço do servidor, usuário e a senha para realizar a sincronização.</arg>
+<arg>10</arg>
+<doc>Waits until `text` appears on current page.</doc>
+<status status="PASS" starttime="20220804 23:57:39.052" endtime="20220804 23:57:45.763"/>
+</kw>
+<kw name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" starttime="20220804 23:57:45.768" endtime="20220804 23:57:48.648"/>
+</kw>
+<status status="PASS" starttime="20220804 23:57:06.258" endtime="20220804 23:57:48.659"/>
+</test>
+<status status="PASS" starttime="20220804 23:57:05.568" endtime="20220804 23:57:48.665"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Conexaoserv">Conexaoserv</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
