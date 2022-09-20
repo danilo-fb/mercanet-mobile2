@@ -73,7 +73,7 @@ Deve gravar um pedido
      Wait Until Page Contains Element    xpath=//android.widget.LinearLayout/android.widget.Button[1]  10s
      Click Element                      xpath=//android.widget.LinearLayout/android.widget.Button[1]
     
-    Wait Until Page Contains        Sucesso     10s
+    
 
 
 
