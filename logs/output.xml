@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220919 23:34:16.177" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220920 23:45:06.416" rpa="false" schemaversion="3">
 <suite id="s1" name="Pedido" source="C:\qaninja\mercanet-mobile\app\tests\pedido.robot">
-<test id="s1-t1" name="Deve gravar um pedido" line="18">
+<test id="s1-t1" name="Deve gravar um pedido" line="26">
 <kw name="Open Session" library="base" type="SETUP">
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://127.0.0.1:4723/wd/hub</arg>
@@ -17,129 +17,129 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220919 23:34:16.854" endtime="20220919 23:34:39.263"/>
+<status status="PASS" starttime="20220920 23:45:06.835" endtime="20220920 23:45:23.350"/>
 </kw>
-<status status="PASS" starttime="20220919 23:34:16.853" endtime="20220919 23:34:39.263"/>
+<status status="PASS" starttime="20220920 23:45:06.834" endtime="20220920 23:45:23.350"/>
 </kw>
 <kw name="Login" library="helpers">
 <kw name="Press Keycode" library="AppiumLibrary">
 <arg>66</arg>
 <doc>Sends a press of keycode to the device.</doc>
-<status status="PASS" starttime="20220919 23:34:39.314" endtime="20220919 23:34:43.497"/>
+<status status="PASS" starttime="20220920 23:45:23.352" endtime="20220920 23:45:23.538"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>id=com.mercanet.android:id/login_txtSenha</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:34:43.497" endtime="20220919 23:34:46.383"/>
+<status status="PASS" starttime="20220920 23:45:23.538" endtime="20220920 23:45:29.060"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>id=com.mercanet.android:id/login_txtSenha</arg>
 <arg>123456</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220919 23:34:46.391" level="INFO">Typing text '123456' into text field 'id=com.mercanet.android:id/login_txtSenha'</msg>
-<status status="PASS" starttime="20220919 23:34:46.383" endtime="20220919 23:34:48.401"/>
+<msg timestamp="20220920 23:45:29.069" level="INFO">Typing text '123456' into text field 'id=com.mercanet.android:id/login_txtSenha'</msg>
+<status status="PASS" starttime="20220920 23:45:29.061" endtime="20220920 23:45:30.138"/>
 </kw>
 <kw name="Press Keycode" library="AppiumLibrary">
 <arg>66</arg>
 <doc>Sends a press of keycode to the device.</doc>
-<status status="PASS" starttime="20220919 23:34:48.402" endtime="20220919 23:34:48.971"/>
+<status status="PASS" starttime="20220920 23:45:30.139" endtime="20220920 23:45:30.718"/>
 </kw>
 <kw name="Press Keycode" library="AppiumLibrary">
 <arg>66</arg>
 <doc>Sends a press of keycode to the device.</doc>
-<status status="PASS" starttime="20220919 23:34:48.972" endtime="20220919 23:34:50.378"/>
+<status status="PASS" starttime="20220920 23:45:30.719" endtime="20220920 23:45:31.831"/>
 </kw>
-<status status="PASS" starttime="20220919 23:34:39.313" endtime="20220919 23:34:50.378"/>
+<status status="PASS" starttime="20220920 23:45:23.352" endtime="20220920 23:45:31.831"/>
 </kw>
 <kw name="Go to Sales" library="helpers">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>class= android.widget.ImageButton</arg>
 <arg>10s</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220919 23:34:50.382" endtime="20220919 23:35:00.553"/>
+<status status="PASS" starttime="20220920 23:45:31.834" endtime="20220920 23:45:37.536"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>class= android.widget.ImageButton</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:00.560" level="INFO">Clicking element 'class= android.widget.ImageButton'.</msg>
-<status status="PASS" starttime="20220919 23:35:00.554" endtime="20220919 23:35:00.763"/>
+<msg timestamp="20220920 23:45:37.543" level="INFO">Clicking element 'class= android.widget.ImageButton'.</msg>
+<status status="PASS" starttime="20220920 23:45:37.536" endtime="20220920 23:45:38.660"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>Carteira de Clientes</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220919 23:35:00.764" endtime="20220919 23:35:03.365"/>
+<status status="PASS" starttime="20220920 23:45:38.661" endtime="20220920 23:45:39.892"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${GOCLI}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:03.372" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Clientes')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:03.365" endtime="20220919 23:35:04.497"/>
+<msg timestamp="20220920 23:45:39.899" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Clientes')]'.</msg>
+<status status="PASS" starttime="20220920 23:45:39.892" endtime="20220920 23:45:40.938"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${CLICKCLI}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220919 23:35:04.497" endtime="20220919 23:35:05.782"/>
+<status status="PASS" starttime="20220920 23:45:40.939" endtime="20220920 23:45:42.098"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${CLICKCLI}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:05.789" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Carteira de Clientes')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:05.782" endtime="20220919 23:35:06.674"/>
+<msg timestamp="20220920 23:45:42.105" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Carteira de Clientes')]'.</msg>
+<status status="PASS" starttime="20220920 23:45:42.098" endtime="20220920 23:45:43.967"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${LISTCLI}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220919 23:35:06.674" endtime="20220919 23:35:08.541"/>
+<status status="PASS" starttime="20220920 23:45:43.967" endtime="20220920 23:45:44.049"/>
 </kw>
 <kw name="Long Press" library="AppiumLibrary">
 <arg>${SLCCLI}</arg>
 <doc>Long press the element with optional duration</doc>
-<status status="PASS" starttime="20220919 23:35:08.541" endtime="20220919 23:35:11.572"/>
+<status status="PASS" starttime="20220920 23:45:44.049" endtime="20220920 23:45:46.899"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>Emitir Pedido</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220919 23:35:11.572" endtime="20220919 23:35:11.917"/>
+<status status="PASS" starttime="20220920 23:45:46.900" endtime="20220920 23:45:47.135"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${BARINFPED}</arg>
 <arg>10</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20220919 23:35:11.917" endtime="20220919 23:35:22.839"/>
+<status status="PASS" starttime="20220920 23:45:47.135" endtime="20220920 23:45:53.111"/>
 </kw>
-<status status="PASS" starttime="20220919 23:34:50.381" endtime="20220919 23:35:22.840"/>
+<status status="PASS" starttime="20220920 23:45:31.833" endtime="20220920 23:45:53.111"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>Tipo de Pedido</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220919 23:35:22.842" endtime="20220919 23:35:23.543"/>
+<status status="PASS" starttime="20220920 23:45:53.112" endtime="20220920 23:45:53.411"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${TIPOPED}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:23.550" endtime="20220919 23:35:24.792"/>
+<status status="PASS" starttime="20220920 23:45:53.414" endtime="20220920 23:45:54.343"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${TIPOPED}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:24.802" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, '01 - Venda Normal')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:24.795" endtime="20220919 23:35:26.513"/>
+<msg timestamp="20220920 23:45:54.350" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, '01 - Venda Normal')]'.</msg>
+<status status="PASS" starttime="20220920 23:45:54.344" endtime="20220920 23:45:55.691"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>Condição de Pagamento</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220919 23:35:26.516" endtime="20220919 23:35:26.945"/>
+<status status="PASS" starttime="20220920 23:45:55.692" endtime="20220920 23:45:55.985"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${CONDPAGTO}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:26.948" endtime="20220919 23:35:28.011"/>
+<status status="PASS" starttime="20220920 23:45:55.989" endtime="20220920 23:45:56.917"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${CONDPAGTO}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:28.028" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, '175 - À VISTA - 0 dias')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:28.021" endtime="20220919 23:35:29.752"/>
+<msg timestamp="20220920 23:45:56.922" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, '175 - À VISTA - 0 dias')]'.</msg>
+<status status="PASS" starttime="20220920 23:45:56.918" endtime="20220920 23:45:58.202"/>
 </kw>
 <kw name="Swipe By Percent" library="AppiumLibrary">
 <arg>77.31</arg>
@@ -148,241 +148,174 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>53.12</arg>
 <doc>Swipe from one percent of the screen to another percent, for an optional duration.
 Normal swipe fails to scale for different screen resolutions, this can be avoided using percent.</doc>
-<status status="PASS" starttime="20220919 23:35:29.754" endtime="20220919 23:35:31.515"/>
+<status status="PASS" starttime="20220920 23:45:58.203" endtime="20220920 23:45:59.822"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${FORMAPAGTO}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:31.523" endtime="20220919 23:35:31.823"/>
+<status status="PASS" starttime="20220920 23:45:59.823" endtime="20220920 23:46:00.040"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${PESQITENS}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:31.835" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@content-desc="PesquisaItens"]'.</msg>
-<status status="PASS" starttime="20220919 23:35:31.829" endtime="20220919 23:35:32.228"/>
+<msg timestamp="20220920 23:46:00.054" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@content-desc="PesquisaItens"]'.</msg>
+<status status="PASS" starttime="20220920 23:46:00.046" endtime="20220920 23:46:00.770"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text, 'Exibindo 0 iten(s)')]</arg>
+<arg>${GOITENS}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:32.256" endtime="20220919 23:35:35.596"/>
+<status status="PASS" starttime="20220920 23:46:00.772" endtime="20220920 23:46:02.829"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text, 'Exibindo 0 iten(s)')]</arg>
+<arg>${GOITENS}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:35.603" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Exibindo 0 iten(s)')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:35.597" endtime="20220919 23:35:35.905"/>
+<msg timestamp="20220920 23:46:02.837" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Exibindo 0 iten(s)')]'.</msg>
+<status status="PASS" starttime="20220920 23:46:02.830" endtime="20220920 23:46:03.330"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text, 'Famílias')]</arg>
+<arg>${GRUPOPROD}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:35.906" endtime="20220919 23:35:37.006"/>
+<status status="PASS" starttime="20220920 23:46:03.337" endtime="20220920 23:46:04.258"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text, 'Famílias')]</arg>
+<arg>${GRUPOPROD}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:37.013" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Famílias')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:37.007" endtime="20220919 23:35:38.728"/>
+<msg timestamp="20220920 23:46:04.266" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Famílias')]'.</msg>
+<status status="PASS" starttime="20220920 23:46:04.259" endtime="20220920 23:46:05.913"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>xpath=//android.widget.TextView[contains(@text, 'BLACK')]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:38.729" endtime="20220919 23:35:39.076"/>
+<status status="PASS" starttime="20220920 23:46:05.914" endtime="20220920 23:46:06.213"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>xpath=//android.widget.TextView[contains(@text, 'BLACK')]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:39.084" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'BLACK')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:39.078" endtime="20220919 23:35:39.804"/>
+<msg timestamp="20220920 23:46:06.219" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'BLACK')]'.</msg>
+<status status="PASS" starttime="20220920 23:46:06.214" endtime="20220920 23:46:06.881"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${BTNCONFIRMAR2}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:39.811" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Confirmar"]'.</msg>
-<status status="PASS" starttime="20220919 23:35:39.805" endtime="20220919 23:35:40.513"/>
+<msg timestamp="20220920 23:46:06.896" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Confirmar"]'.</msg>
+<status status="PASS" starttime="20220920 23:46:06.889" endtime="20220920 23:46:07.688"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>xpath=//android.widget.TextView[contains(@text, '8841.70 - AD DISPLAY MODULO ARTDECO')]</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:40.516" endtime="20220919 23:35:43.287"/>
+<status status="PASS" starttime="20220920 23:46:07.693" endtime="20220920 23:46:09.257"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>xpath=//android.widget.TextView[contains(@text, '8841.70 - AD DISPLAY MODULO ARTDECO')]</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:43.294" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, '8841.70 - AD DISPLAY MODULO ARTDECO')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:43.288" endtime="20220919 23:35:43.670"/>
+<msg timestamp="20220920 23:46:09.266" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, '8841.70 - AD DISPLAY MODULO ARTDECO')]'.</msg>
+<status status="PASS" starttime="20220920 23:46:09.258" endtime="20220920 23:46:09.985"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${QTD}</arg>
 <arg>10s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:43.671" endtime="20220919 23:35:50.137"/>
+<status status="PASS" starttime="20220920 23:46:09.986" endtime="20220920 23:46:15.273"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${QTD}</arg>
 <arg>2</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:50.145" level="INFO">Typing text '2' into text field 'xpath=//android.widget.LinearLayout[1]/android.widget.EditText'</msg>
-<status status="PASS" starttime="20220919 23:35:50.137" endtime="20220919 23:35:50.884"/>
+<msg timestamp="20220920 23:46:15.281" level="INFO">Typing text '2' into text field 'xpath=//android.widget.LinearLayout[1]/android.widget.EditText'</msg>
+<status status="PASS" starttime="20220920 23:46:15.275" endtime="20220920 23:46:15.481"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${BTNCONFIRMAR2}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:50.891" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Confirmar"]'.</msg>
-<status status="PASS" starttime="20220919 23:35:50.885" endtime="20220919 23:35:51.569"/>
+<msg timestamp="20220920 23:46:15.491" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Confirmar"]'.</msg>
+<status status="PASS" starttime="20220920 23:46:15.485" endtime="20220920 23:46:16.070"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>xpath=//android.widget.LinearLayout[1]/android.widget.LinearLayout/android.widget.ImageView</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:51.572" endtime="20220919 23:35:56.544"/>
+<status status="PASS" starttime="20220920 23:46:16.072" endtime="20220920 23:46:19.895"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.LinearLayout[@content-desc="Entrega"]/android.widget.TextView</arg>
+<arg>${ABAENTREGA}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:56.552" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@content-desc="Entrega"]/android.widget.TextView'.</msg>
-<status status="PASS" starttime="20220919 23:35:56.546" endtime="20220919 23:35:57.070"/>
+<msg timestamp="20220920 23:46:19.907" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout[@content-desc="Entrega"]/android.widget.TextView'.</msg>
+<status status="PASS" starttime="20220920 23:46:19.900" endtime="20220920 23:46:20.526"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text, 'Endereço Alternativo')]</arg>
+<arg>${ENDALT}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:57.071" endtime="20220919 23:35:58.004"/>
+<status status="PASS" starttime="20220920 23:46:20.528" endtime="20220920 23:46:21.343"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text, 'Endereço Alternativo')]</arg>
+<arg>${ENDALT}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:58.011" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Endereço Alternativo')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:58.006" endtime="20220919 23:35:58.504"/>
+<msg timestamp="20220920 23:46:21.349" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Endereço Alternativo')]'.</msg>
+<status status="PASS" starttime="20220920 23:46:21.344" endtime="20220920 23:46:21.810"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text, 'Endereço do Cliente')]</arg>
+<arg>${ENDCLI}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:35:58.505" endtime="20220919 23:35:59.388"/>
+<status status="PASS" starttime="20220920 23:46:21.812" endtime="20220920 23:46:22.586"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.TextView[contains(@text, 'Endereço do Cliente')]</arg>
+<arg>${ENDCLI}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:35:59.396" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Endereço do Cliente')]'.</msg>
-<status status="PASS" starttime="20220919 23:35:59.390" endtime="20220919 23:36:00.219"/>
+<msg timestamp="20220920 23:46:22.595" level="INFO">Clicking element 'xpath=//android.widget.TextView[contains(@text, 'Endereço do Cliente')]'.</msg>
+<status status="PASS" starttime="20220920 23:46:22.588" endtime="20220920 23:46:23.444"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@content-desc="Confirma"]</arg>
+<arg>${CONFPED}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:36:00.220" endtime="20220919 23:36:00.398"/>
+<status status="PASS" starttime="20220920 23:46:23.446" endtime="20220920 23:46:23.550"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.Button[@content-desc="Confirma"]</arg>
+<arg>${CONFPED}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:36:00.404" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Confirma"]'.</msg>
-<status status="PASS" starttime="20220919 23:36:00.399" endtime="20220919 23:36:00.653"/>
+<msg timestamp="20220920 23:46:23.559" level="INFO">Clicking element 'xpath=//android.widget.Button[@content-desc="Confirma"]'.</msg>
+<status status="PASS" starttime="20220920 23:46:23.551" endtime="20220920 23:46:23.766"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.LinearLayout/android.widget.Button[1]</arg>
+<arg>${BTNFINPED}</arg>
 <arg>10s</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220919 23:36:00.654" endtime="20220919 23:36:02.514"/>
+<status status="PASS" starttime="20220920 23:46:23.774" endtime="20220920 23:46:25.137"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>xpath=//android.widget.LinearLayout/android.widget.Button[1]</arg>
+<arg>${BTNFINPED}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220919 23:36:02.523" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout/android.widget.Button[1]'.</msg>
-<status status="PASS" starttime="20220919 23:36:02.516" endtime="20220919 23:36:02.772"/>
+<msg timestamp="20220920 23:46:25.147" level="INFO">Clicking element 'xpath=//android.widget.LinearLayout/android.widget.Button[1]'.</msg>
+<status status="PASS" starttime="20220920 23:46:25.140" endtime="20220920 23:46:25.354"/>
 </kw>
-<kw name="Wait Until Page Contains" library="AppiumLibrary">
-<arg>Sucesso</arg>
-<arg>10s</arg>
-<doc>Waits until `text` appears on current page.</doc>
-<msg timestamp="20220919 23:36:13.761" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
-&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="1794"&gt;
-  &lt;android.widget.FrameLayout index="0" package="com.mercanet.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
-    &lt;android.widget.LinearLayout index="0" package="com.mercanet.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
-      &lt;android.widget.FrameLayout index="0" package="com.mercanet.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
-        &lt;android.widget.LinearLayout index="0" package="com.mercanet.android" class="android.widget.LinearLayout" text="" resource-id="com.mercanet.android:id/action_bar_root" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
-          &lt;android.widget.FrameLayout index="0" package="com.mercanet.android" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
-            &lt;androidx.drawerlayout.widget.DrawerLayout index="0" package="com.mercanet.android" class="androidx.drawerlayout.widget.DrawerLayout" text="" resource-id="com.mercanet.android:id/drawer_layout" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,1794]" displayed="true"&gt;
-              &lt;android.widget.LinearLayout index="0" package="com.mercanet.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,63][1080,1794]" displayed="true"&gt;
-                &lt;android.widget.LinearLayout index="0" package="com.mercanet.android" class="android.widget.LinearLayout" text="" resource-id="com.mercanet.android:id/appToolbar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,63][1080,210]" displayed="true"&gt;
-                  &lt;android.view.ViewGroup index="0" package="com.mercanet.android" class="android.view.ViewGroup" text="" resource-id="com.mercanet.android:id/toolbar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,63][1080,210]" displayed="true"&gt;
-                    &lt;android.widget.ImageButton index="0" package="com.mercanet.android" class="android.widget.ImageButton" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,63][147,210]" displayed="true" /&gt;
-                    &lt;android.widget.Spinner index="1" package="com.mercanet.android" class="android.widget.Spinner" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="true" selected="false" bounds="[189,89][630,183]" displayed="true"&gt;
-                      &lt;android.widget.LinearLayout index="0" package="com.mercanet.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[189,89][468,183]" displayed="true"&gt;
-                        &lt;android.widget.TextView index="0" package="com.mercanet.android" class="android.widget.TextView" text="Clientes" resource-id="com.mercanet.android:id/spinner_titulo" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[189,89][322,140]" displayed="true" /&gt;
-                        &lt;android.widget.TextView index="1" package="com.mercanet.android" class="android.widget.TextView" text="Carteira de Clientes" resource-id="com.mercanet.android:id/spinner_subtitulo" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[189,140][468,183]" displayed="true" /&gt;
-                      &lt;/android.widget.LinearLayout&gt;
-                    &lt;/android.widget.Spinner&gt;
-                    &lt;androidx.appcompat.widget.LinearLayoutCompat index="2" package="com.mercanet.android" class="androidx.appcompat.widget.LinearLayoutCompat" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[849,63][1080,210]" displayed="true"&gt;
-                      &lt;android.widget.Button index="0" package="com.mercanet.android" class="android.widget.Button" text="" content-desc="Visualizar Mapa" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[849,73][975,199]" displayed="true" /&gt;
-                      &lt;android.widget.ImageView index="1" package="com.mercanet.android" class="android.widget.ImageView" text="" content-desc="More options" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[975,73][1080,199]" displayed="true" /&gt;
-                    &lt;/androidx.appcompat.widget.LinearLayoutCompat&gt;
-                  &lt;/android.view.ViewGroup&gt;
-                &lt;/android.widget.LinearLayout&gt;
-                &lt;android.widget.LinearLayout index="1" package="com.mercanet.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,210][1080,1794]" displayed="true"&gt;
-                  &lt;android.widget.FrameLayout index="0" package="com.mercanet.android" class="android.widget.FrameLayout" text="" resource-id="com.mercanet.android:id/visualizar_clientes_list" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,210][1080,1794]" displayed="true"&gt;
-                    &lt;android.widget.LinearLayout index="0" package="com.mercanet.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,210][1080,1794]" displayed="true"&gt;
-                      &lt;androidx.viewpager.widget.ViewPager index="0" package="com.mercanet.android" class="androidx.viewpager.widget.ViewPager" text="" resource-id="com.mercanet.android:id/viewpager_rotas_fragment_viewpager" checkable="false" checked="false" clickable="false" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="true" selected="false" bounds="[0,210][1080,1794]" displayed="true"&gt;
-                        &lt;android.widget.FrameLayout index="1" package="com.mercanet.android" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,210][1080,1663]" displayed="true"&gt;
-                          &lt;android.widget.LinearLayout index="0" package="com.mercanet.android" class="android.widget.LinearLayout" text="" resource-id="com.mercanet.android:id/layout_rotas" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[26,236][1054,1663]" displayed="true"&gt;
-                            &lt;android.widget.LinearLayout index="0" package="com.mercanet.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[26,236][1054,390]" displayed="true"&gt;
-                              &lt;android.widget.FrameLayout index="0" package="com.mercanet.android" class="android.widget.FrameLayout" text="" resource-id="com.mercanet.android:id/lista_cliente_rota_frag_spnRota" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="true" password="false" scrollable="false" selected="false" bounds="[26,236][950,390]" displayed="true"&gt;
-                                &lt;android.widget.LinearLayout index="0" package="com.mercanet.android" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[52,262][924,364]" displayed="true"&gt;
-                                  &lt;android.widget.TextView index="0" package="com.mercanet.android" class="android.widget.TextView" text="Nenhuma rota encontrada" resource-id="com.mercanet.android:id/spinner_view_rota_codigo_rota" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[52,262][479,313]" displayed="true" /&gt;
-                                  &lt;android.widget.TextView index="1" package="com.mercanet.android" class="android.widget.TextView" text="0 de 0 clientes atendidos" resource-id="com.mercanet.android:id/spinner_view_rota_data_quantidade" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[52,313][462,364]" displayed="true" /&gt;
-                                &lt;/android.widget.LinearLayout&gt;
-                              &lt;/android.widget.FrameLayout&gt;
-                              &lt;android.view.View index="1" package="com.mercanet.android" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[950,249][953,377]" displayed="true" /&gt;
-                              &lt;android.widget.Button index="2" package="com.mercanet.android" class="android.widget.Button" text="" resource-id="com.mercanet.android:id/lista_cliente_rota_frag_alterar_data" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[953,259][1054,367]" displayed="true" /&gt;
-                            &lt;/android.widget.LinearLayout&gt;
-                            &lt;android.view.View index="1" package="com.mercanet.android" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[52,390][1028,393]" displayed="true" /&gt;
-                            &lt;android.widget.TextView index="2" package="com.mercanet.android" class="android.widget.TextView" text="Nenhum cliente encontrado" resource-id="com.mercanet.android:id/emptyView" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[26,393][1054,1663]" displayed="true" /&gt;
-                          &lt;/android.widget.LinearLayout&gt;
-                        &lt;/android.widget.FrameLayout&gt;
-                        &lt;android.view.ViewGroup index="3" package="com.mercanet.android" class="android.view.ViewGroup" text="" resource-id="com.mercanet.android:id/viewpager_rotas_fragment_pagerTabStrip" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1663][1080,1794]" displayed="true"&gt;
-                          &lt;android.widget.TextView index="0" package="com.mercanet.android" class="android.widget.TextView" text="18/09/2022 - Sun" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,1698][201,1755]" displayed="true" /&gt;
-                          &lt;android.widget.TextView index="1" package="com.mercanet.android" class="android.widget.TextView" text="19/09/2022 - Mon" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[369,1698][711,1755]" displayed="true" /&gt;
-                          &lt;android.widget.TextView index="2" package="com.mercanet.android" class="android.widget.TextView" text="20/09/2022 - Tue" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[879,1698][1080,1755]" displayed="true" /&gt;
-                        &lt;/android.view.ViewGroup&gt;
-                      &lt;/androidx.viewpager.widget.ViewPager&gt;
-                    &lt;/android.widget.LinearLayout&gt;
-                  &lt;/android.widget.FrameLayout&gt;
-                &lt;/android.widget.LinearLayout&gt;
-              &lt;/android.widget.LinearLayout&gt;
-            &lt;/androidx.drawerlayout.widget.DrawerLayout&gt;
-          &lt;/android.widget.FrameLayout&gt;
-        &lt;/android.widget.LinearLayout&gt;
-      &lt;/android.widget.FrameLayout&gt;
-    &lt;/android.widget.LinearLayout&gt;
-  &lt;/android.widget.FrameLayout&gt;
-&lt;/hierarchy&gt;</msg>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220919 23:36:14.434" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220919 23:36:13.762" endtime="20220919 23:36:14.435"/>
-</kw>
-<msg timestamp="20220919 23:36:14.436" level="FAIL">Text 'Sucesso' did not appear in 10 seconds</msg>
-<status status="FAIL" starttime="20220919 23:36:02.775" endtime="20220919 23:36:14.437"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220920 23:46:29.371" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220920 23:46:25.357" endtime="20220920 23:46:29.372"/>
 </kw>
 <kw name="Close Session" library="base" type="TEARDOWN">
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220919 23:36:15.022" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-2.png"&gt;&lt;img src="appium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220919 23:36:14.440" endtime="20220919 23:36:15.023"/>
+<msg timestamp="20220920 23:46:30.052" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220920 23:46:29.373" endtime="20220920 23:46:30.052"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220919 23:36:15.023" endtime="20220919 23:36:16.419"/>
+<status status="PASS" starttime="20220920 23:46:30.052" endtime="20220920 23:46:31.307"/>
 </kw>
-<status status="PASS" starttime="20220919 23:36:14.439" endtime="20220919 23:36:16.420"/>
+<status status="PASS" starttime="20220920 23:46:29.373" endtime="20220920 23:46:31.307"/>
 </kw>
-<status status="FAIL" starttime="20220919 23:34:16.850" endtime="20220919 23:36:16.424">Text 'Sucesso' did not appear in 10 seconds</status>
+<status status="PASS" starttime="20220920 23:45:06.833" endtime="20220920 23:46:31.318"/>
 </test>
-<status status="FAIL" starttime="20220919 23:34:16.182" endtime="20220919 23:36:16.430"/>
+<status status="PASS" starttime="20220920 23:45:06.420" endtime="20220920 23:46:31.339"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Pedido">Pedido</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Pedido">Pedido</stat>
 </suite>
 </statistics>
 <errors>
