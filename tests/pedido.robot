@@ -21,12 +21,14 @@ ${ENDCLI}          xpath=//android.widget.TextView[contains(@text, 'Endereço do
 ${CONFPED}         xpath=//android.widget.Button[@content-desc="Confirma"]
 ${BTNFINPED}        xpath=//android.widget.LinearLayout/android.widget.Button[1]
 
+
+
 #${teste}          id=android:id/button2 
 ***Test Cases***
 Deve gravar um pedido
 
     ##Principal 
-    Login        
+    Login     
     Go to Sales
 
     #Capa do pedido
@@ -38,8 +40,9 @@ Deve gravar um pedido
     Click Element                       ${CONDPAGTO}  
     Swipe By Percent                    77.31      68.43    71.57   53.12
     Wait Until Page Contains Element    ${FORMAPAGTO}  
-    Click Element                       ${PESQITENS}
+    Click Element                       ${PESQITENS} 
     
+    Discard itens
     #Adiciona item
     Wait Until Page Contains Element    ${GOITENS} 
     Click Element                       ${GOITENS}  

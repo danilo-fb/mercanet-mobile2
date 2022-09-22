@@ -12,6 +12,8 @@ ${GOCLI}            xpath=//android.widget.TextView[contains(@text, 'Clientes')]
 ${LISTCLI}          id=com.mercanet.android:id/layout_list_clients  
 ${SLCCLI}           xpath=//android.widget.TextView[contains(@text, 'CECRIMA COMERCIAL LTDA')] 
 ${BARINFPED}        id=com.mercanet.android:id/pedido_activity_pagerTabStrip
+
+
 ***Keywords***
 
 No Connect Server
@@ -47,10 +49,12 @@ Login
     
     Press Keycode                   66      
     #Input Text                  
-    Wait Until Page Contains Element    id=com.mercanet.android:id/login_txtSenha     
-    Input Text                   id=com.mercanet.android:id/login_txtSenha     123456
+    Wait Until Page Contains Element    id=com.mercanet.android:id/login_txtSenha   10s   
+    Input Text                   id=com.mercanet.android:id/login_txtSenha     123456  
     Press Keycode                   66
     Press Keycode                   66
+    ${close}=  Run Keyword And Return Status    Element Should Be Visible   xpath=//android.widget.Button[contains(@text, 'FECHAR')] 
+    Run Keyword If    ${close}    Click Element   xpath=//android.widget.Button[contains(@text, 'FECHAR')] 
 
     #Click Button            id=com.mercanet.android:id/login_btnEntrar
 
@@ -70,6 +74,10 @@ Go to Sales
     Long Press                      ${SLCCLI}                      
     Click Text                      Emitir Pedido
     Wait Until Element is Visible   ${BARINFPED}   10
+
+Discard itens
+    ${present}=  Run Keyword And Return Status    Element Should Be Visible   xpath=//android.widget.Button[contains(@text, 'DESCARTAR ITENS')] 
+    Run Keyword If    ${present}    Click Element   xpath=//android.widget.Button[contains(@text, 'DESCARTAR ITENS')] 
 
 
   
